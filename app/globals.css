@@ -1,0 +1,129 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* ==================================================================
+   Sinem Yazıcı — sıcak, güven veren, profesyonel kişisel marka.
+   Beyaz zemin + zarif teal (petrol) marka rengi + yumuşak coral vurgu.
+   Dostane, yuvarlak sans-serif (Poppins). Mono/terminal yok.
+================================================================== */
+@theme {
+  --color-bg: #ffffff;
+  --color-panel: #f5f6f7;
+  --color-surface: #ffffff;
+  --color-border: #e6e8ec;
+  --color-hairline: #eef0f2;
+
+  --color-ink: #1a1d22;
+  --color-ink-soft: #2a2e35;
+  --color-fg: #21252b;
+  --color-muted: #5b626b;
+  --color-faint: #8b9199;
+
+  /* Tek düz renk — antrasit (marka = mürekkep) */
+  --color-brand: #1a1d22;
+  --color-brand-soft: #4a5058;
+  --color-brand-deep: #000000;
+
+  /* Nötr vurgu (çok az) */
+  --color-accent: #1a1d22;
+  --color-accent-soft: #d7dade;
+
+  /* Piyasa verisi (fonksiyonel) */
+  --color-up: #17916a;
+  --color-down: #d1584a;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-poppins), var(--font-inter), sans-serif;
+
+  --radius-sm: 0.625rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.375rem;
+  --radius-2xl: 1.75rem;
+
+  --shadow-sm: 0 1px 2px rgba(22, 39, 44, 0.05);
+  --shadow-md: 0 2px 6px rgba(22, 39, 44, 0.05), 0 16px 40px -20px rgba(22, 39, 44, 0.22);
+  --shadow-lg: 0 6px 12px rgba(22, 39, 44, 0.07), 0 30px 60px -24px rgba(22, 39, 44, 0.3);
+  --shadow-brand: 0 18px 40px -18px rgba(26, 29, 34, 0.35);
+}
+
+/* ------------------------------------------------------------------ */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgba(26, 29, 34, 0.12);
+  color: var(--color-ink);
+}
+
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb {
+  background: #cdd6d6;
+  border: 4px solid var(--color-bg);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-brand-soft); }
+
+/* ------------------------------------------------------------------
+   Yardımcılar
+------------------------------------------------------------------- */
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.015em;
+}
+
+/* Küçük üst-başlık (mono değil, marka renginde) */
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+/* Tabular rakamlar (istatistik hizası için, sans) */
+.nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Beyaz kart */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+}
+
+/* Düz koyu panel (bülten / vurgu bandı) */
+.brand-panel {
+  background: var(--color-ink);
+}
+
+/* JS-bağımsız giriş animasyonu */
+@keyframes reveal-in {
+  from { opacity: 0; transform: translateY(var(--reveal-y, 14px)); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal { opacity: 1; animation: reveal-in 0.65s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-floaty { animation: floaty 7s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { animation: none; opacity: 1; transform: none; }
+  .animate-floaty { animation: none; }
+}

@@ -1,0 +1,319 @@
+{
+  "profile": {
+    "firstName": "Sinem",
+    "lastName": "Yazıcı",
+    "fullName": "Sinem Yazıcı",
+    "title": "Profesyonel Borsacı & Yatırım Stratejisti",
+    "tagline": "Borsa İstanbul'da 12+ yıllık tecrübeyle disiplinli, veri odaklı ve risk yönetimini merkeze alan bir yatırım yaklaşımı.",
+    "shortBio": "1990 doğumlu; Boğaziçi Üniversitesi İktisat Bölümü'nü bitirdikten sonra yüksek lisansını Almanya'da tamamlayan bir borsacı ve yatırım eğitmeni. Borsa İstanbul (BIST) hisse senedi ve endeks piyasalarında yıllardır aktif olarak işlem yapıyor, yatırımcılara sürdürülebilir, duygudan arınmış ve sistematik bir işlem disiplini kazandırıyorum.",
+    "location": "İstanbul, Türkiye",
+    "yearsOfExperience": 12,
+    "avatar": "/images/profile.jpg",
+    "coverImage": "/images/cover.jpg",
+    "resumeUrl": "/files/sinem-yazici-cv.pdf",
+    "availableForWork": false,
+    "availabilityText": "",
+    "languages": ["Türkçe", "İngilizce"]
+  },
+  "seo": {
+    "siteName": "Sinem Yazıcı",
+    "titleDefault": "Sinem Yazıcı — Profesyonel Borsacı & Yatırım Stratejisti",
+    "titleTemplate": "%s | Sinem Yazıcı",
+    "description": "Borsa İstanbul'da 12+ yıllık tecrübeye sahip profesyonel borsacı Sinem Yazıcı. BIST hisse ve endeks analizleri, yatırım stratejileri, eğitim ve danışmanlık.",
+    "keywords": [
+      "Sinem Yazıcı",
+      "borsacı",
+      "borsa",
+      "borsa istanbul",
+      "BIST",
+      "hisse senedi",
+      "yatırım",
+      "teknik analiz",
+      "borsa analizi",
+      "yatırım danışmanlığı",
+      "borsa eğitimi"
+    ],
+    "ogImage": "/images/og.jpg",
+    "url": "https://sinemyazici.com.tr",
+    "locale": "tr_TR",
+    "twitterHandle": "@sinemyazici"
+  },
+  "theme": {
+    "accent": "#d4af37",
+    "positive": "#16c784",
+    "mode": "dark"
+  },
+  "hero": {
+    "eyebrow": "",
+    "primaryCta": { "label": "Kayıt Ol", "href": "/kayit" },
+    "secondaryCta": { "label": "Giriş Yap", "href": "/giris" }
+  },
+  "auth": {
+    "loginLabel": "Giriş Yap",
+    "loginHref": "/giris",
+    "registerLabel": "Kayıt Ol",
+    "registerHref": "/kayit"
+  },
+  "brokers": {
+    "heading": "Çalıştığım aracı kurumlar",
+    "description": "Aşağıdaki aracı kurumlara referansımla kayıt olarak avantajlı koşullardan yararlanabilir, birlikte çalıştığımız güvenilir platformlardan işlem yapabilirsiniz.",
+    "items": [
+      {
+        "name": "Midas",
+        "logo": "/images/broker-midas.webp",
+        "description": "Türkiye ve ABD hisse senetlerine düşük komisyonla, sade bir arayüzle erişim sağlayan dijital yatırım platformu.",
+        "registerLabel": "Kayıt Ol",
+        "registerHref": "https://www.getmidas.com/"
+      },
+      {
+        "name": "Pusula Yatırım",
+        "logo": "/images/broker-pusula.png",
+        "description": "Aracılık, portföy yönetimi ve piyasa analizleri sunan; canlı yayınlarda birlikte çalıştığım aracı kurum.",
+        "registerLabel": "Kayıt Ol",
+        "registerHref": "https://www.pusulayatirim.com.tr/"
+      },
+      {
+        "name": "A1 Capital",
+        "logo": "/images/broker-a1capital.png",
+        "description": "Hisse senedi ve VİOP dâhil geniş ürün yelpazesiyle köklü ve güvenilir bir aracı kurum.",
+        "registerLabel": "Kayıt Ol",
+        "registerHref": "https://www.a1capital.com.tr/"
+      }
+    ]
+  },
+  "education": {
+    "heading": "Eğitim & mentorluk",
+    "description": "Küçük ve sınırlı kontenjanlı gruplarla, tamamen uygulamalı eğitimler düzenliyorum. Amacım katılımcılara ezber değil; kendi kararlarını verebilecekleri kalıcı ve sistematik bir bakış açısı kazandırmak.",
+    "items": [
+      {
+        "image": "/images/egitim-1.jpg",
+        "title": "Grup Eğitim Programı",
+        "date": "Ocak 2025 · İstanbul",
+        "description": "Sınırlı kontenjanlı grup eğitimlerimizde temel piyasa yapısından risk yönetimine kadar tüm süreç uygulamalı olarak işleniyor. Her katılımcı kendi ekranında birebir takip ediliyor, teorik bilgi anında sahaya dökülüyor."
+      },
+      {
+        "image": "/images/egitim-2.jpg",
+        "title": "Price Action & Mum Formasyonları Atölyesi",
+        "date": "Mart 2025 · İstanbul",
+        "description": "İleri seviye atölyede price action, mum formasyonları ve dönüş sinyalleri gerçek grafikler üzerinden analiz ediliyor. Deneyimli eğitim kadromuzla teknik analizi ekran başında, canlı örneklerle uyguluyoruz."
+      },
+      {
+        "image": "/images/egitim-3.jpg",
+        "title": "Canlı Eğitim Seansı & Grup Buluşması",
+        "date": "Kasım 2024 · İstanbul",
+        "description": "Yüz yüze eğitim programımızın kapanışında katılımcılarla birlikte. Canlı grafikler eşliğinde işlenen seansların ardından, öğrendiklerini gerçek piyasada uygulamaya hazır bir grup daha aramıza katıldı."
+      }
+    ]
+  },
+  "media": {
+    "heading": "Medyada Sinem Yazıcı",
+    "description": "Uluslararası buluşmalar, konferanslar ve ödül törenlerinden kareler.",
+    "images": [
+      { "src": "/images/medya-wfe-1.jpg", "caption": "64. WFE Genel Kurulu & Yıllık Toplantısı · Borsa İstanbul (Ekim 2025)" },
+      { "src": "/images/medya-wfe-2.webp", "caption": "Dünya borsaları İstanbul'da buluştu · WFE 2025" },
+      { "src": "/images/medya-bursa-borsa.jpg", "caption": "Borsa'nın Enleri Ödül Töreni · Bursa Ticaret Borsası 100. Yıl (2024)" },
+      { "src": "/images/medya-kadin-direktorler.webp", "caption": "12. Kadın Direktörler Konferansı · Sabancı Üniversitesi" },
+      { "src": "/images/medya-altin-boga.jpg", "caption": "11. Altın Boğa Ödülleri · TSPB (2025)" },
+      { "src": "/images/medya-ic-denetim.jpg", "caption": "VI. İç Denetim Farkındalık Ödülleri · TİDE (2016)" }
+    ]
+  },
+  "gallery": {
+    "heading": "Eğitimlerden kareler",
+    "description": "Grup eğitimleri, atölyeler ve mentorluk buluşmalarından anlar.",
+    "images": [
+      { "src": "/images/canli-yayin.jpg", "caption": "Canlı yayın: Endeks analizi · Mayıs 2026", "tall": true },
+      { "src": "/images/galeri-web-konferans.jpg", "caption": "Web Konferans: Piyasa Odaklı · Fırat Ökte ile (Mayıs 2026)" },
+      { "src": "/images/halka-arz-gong.jpg", "caption": "Gezinomi Halka Arz Gong Töreni · Borsa İstanbul (2022)" },
+      { "src": "/images/egitim-1.jpg", "caption": "Grup eğitim programı · İstanbul" },
+      { "src": "/images/egitim-2.jpg", "caption": "Price action atölyesi · İstanbul" },
+      { "src": "/images/egitim-3.jpg", "caption": "Canlı eğitim seansı · İstanbul" }
+    ]
+  },
+  "stats": [
+    { "label": "Yıllık Piyasa Tecrübesi", "value": 12, "suffix": "+" },
+    { "label": "Eğitim Verilen Yatırımcı", "value": 3500, "suffix": "+" },
+    { "label": "Yayınlanan Analiz", "value": 480, "suffix": "+" },
+    { "label": "Takipçi", "value": 120, "suffix": "K+" }
+  ],
+  "expertise": [
+    "Borsa İstanbul (BIST)",
+    "Hisse Senedi",
+    "Teknik Analiz",
+    "Temel Analiz",
+    "Endeks & VİOP",
+    "Risk Yönetimi",
+    "Portföy Yönetimi",
+    "Makroekonomi",
+    "Fibonacci & Elliott",
+    "Uzun Vadeli Yatırım"
+  ],
+  "about": {
+    "heading": "Borsada 12 yıl: disiplin, sabır ve sistem",
+    "body": [
+      "1990 yılında doğdum. Lisans eğitimimi Boğaziçi Üniversitesi İktisat Bölümü'nde tamamladıktan sonra, akademik altyapımı derinleştirmek için Almanya'ya giderek iki yıl boyunca yüksek lisans yaptım. Bu dönem, finansal piyasalara hem güçlü bir teorik zemin hem de disiplinli bir analiz anlayışıyla yaklaşmamın temelini oluşturdu.",
+      "Türkiye'ye dönüşümün ardından kariyerimi tümüyle Borsa İstanbul'a adadım. İlk yıllardaki deneme-yanılma sürecinin sonunda başarının tek bir sırrı olduğunu gördüm: kurallara dayalı, duygudan arınmış ve risk yönetimini merkeze alan bir sistem. Bugün hisse senedi ve endeks piyasalarında aktif olarak işlem yapıyorum.",
+      "Piyasadaki tecrübemi binlerce yatırımcıyla paylaşıyor; eğitim ve mentorluk programları yürütüyorum. Amacım kısa vadeli 'sinyal' vermek değil; kişilerin kendi kararlarını verebilecekleri kalıcı ve sistematik bir bakış açısı kazandırmak. Analizlerimi şeffaflık ilkesiyle, kazançlar kadar hatalarımı da göstererek paylaşıyorum — çünkü piyasada uzun soluklu kalmanın yolu mükemmel olmaktan değil, tutarlı olmaktan geçiyor.",
+      "Yoğun piyasa temposunun yanında bir kız çocuğu annesiyim. Anneliğin bana kazandırdığı sabrı ve zaman disiplinini, hem kendi işlem yaklaşımıma hem de öğrencilerimle kurduğum ilişkiye taşıdığıma inanıyorum."
+    ],
+    "highlights": []
+  },
+  "experience": [
+    {
+      "role": "Bağımsız Borsa Yatırımcısı & Stratejist",
+      "org": "Serbest",
+      "period": "2019 — Günümüz",
+      "description": "Borsa İstanbul'da hisse senedi ve endeks piyasalarında bireysel portföy yönetimi, strateji geliştirme ve içerik üretimi."
+    },
+    {
+      "role": "Kıdemli Piyasa Analisti",
+      "org": "Global Menkul Değerler",
+      "period": "2016 — 2019",
+      "description": "Kurumsal müşteriler için teknik ve temel analiz raporları, günlük piyasa bültenleri ve strateji sunumları."
+    },
+    {
+      "role": "Yatırım Uzmanı",
+      "org": "Menkul Değerler A.Ş.",
+      "period": "2014 — 2016",
+      "description": "Almanya'daki yüksek lisans dönüşünün ardından borsa işlem operasyonları, hisse takibi, risk yönetimi ve analiz süreçlerinde görev aldı."
+    },
+    {
+      "role": "Yüksek Lisans (İktisat / Finans)",
+      "org": "Almanya",
+      "period": "2012 — 2014",
+      "description": "Boğaziçi Üniversitesi İktisat lisansının ardından Almanya'da iki yıllık yüksek lisans eğitimi; finansal piyasalar ve ekonomi üzerine akademik uzmanlaşma."
+    }
+  ],
+  "certifications": [
+    { "name": "Sermaye Piyasası Faaliyetleri Düzey 3", "issuer": "SPK Lisanslama", "year": 2016 },
+    { "name": "Türev Araçlar Lisansı", "issuer": "SPK Lisanslama", "year": 2017 },
+    { "name": "Certified Financial Technician (CFTe)", "issuer": "IFTA", "year": 2019 }
+  ],
+  "achievements": [
+    { "title": "3.500+ Yatırımcıya Eğitim", "description": "Online ve yüz yüze programlarla binlerce kişiye borsa ve yatırım disiplini aktarıldı." },
+    { "title": "480+ Yayınlanan Analiz", "description": "Şeffaf ve gerekçeli BIST hisse ve endeks analizleri düzenli olarak paylaşıldı." },
+    { "title": "Borsa İstanbul'da 12+ Yıl", "description": "Uzun yıllar boyunca BIST'te kesintisiz, disiplinli ve tutarlı işlem geçmişi." }
+  ],
+  "services": [
+    {
+      "title": "Birebir Mentorluk",
+      "description": "Kişiye özel, hedef odaklı borsa ve yatırım mentorluğu ile strateji geliştirme.",
+      "icon": "graduation-cap"
+    },
+    {
+      "title": "Grup Eğitim Programları",
+      "description": "Temelden ileri seviyeye teknik analiz, risk yönetimi ve psikoloji eğitimleri.",
+      "icon": "users"
+    },
+    {
+      "title": "Piyasa Danışmanlığı",
+      "description": "Kurumlar ve bireysel yatırımcılar için strateji ve portföy danışmanlığı.",
+      "icon": "line-chart"
+    },
+    {
+      "title": "Analiz Bülteni",
+      "description": "Düzenli piyasa analizleri, işlem fikirleri ve makro değerlendirmeler.",
+      "icon": "newspaper"
+    }
+  ],
+  "markets": [
+    { "symbol": "BIST:XU100", "label": "BIST 100" },
+    { "symbol": "BIST:XU030", "label": "BIST 30" },
+    { "symbol": "BIST:THYAO", "label": "Türk Hava Yolları" },
+    { "symbol": "BIST:GARAN", "label": "Garanti Bankası" },
+    { "symbol": "BIST:ASELS", "label": "Aselsan" },
+    { "symbol": "BIST:AKBNK", "label": "Akbank" }
+  ],
+  "testimonials": [
+    {
+      "name": "Emre K.",
+      "role": "Bireysel Yatırımcı",
+      "quote": "Sinem Hanım'ın eğitiminden sonra işlemlerime tamamen kural bazlı yaklaşmaya başladım. Duygusal kararlarımı bıraktım ve tutarlılığım arttı.",
+      "avatar": "/images/testimonials/emre.jpg"
+    },
+    {
+      "name": "Deniz A.",
+      "role": "Mühendis & Bireysel Yatırımcı",
+      "quote": "Risk yönetimi konusunda gözümü açan kişidir. Şeffaf paylaşımları güven veriyor; sadece kazançları değil hataları da anlatıyor.",
+      "avatar": "/images/testimonials/deniz.jpg"
+    },
+    {
+      "name": "Merve T.",
+      "role": "Mentorluk Öğrencisi",
+      "quote": "Birebir mentorluk sürecinde kendi stratejimi oturttum. Artık piyasaya bakışım tamamen değişti.",
+      "avatar": "/images/testimonials/merve.jpg"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Yatırım tavsiyesi veriyor musunuz?",
+      "a": "Hayır. Paylaştığım tüm içerikler eğitim ve bilgilendirme amaçlıdır, yatırım tavsiyesi niteliği taşımaz. Kararlarınızı kendi risk profilinize göre vermelisiniz."
+    },
+    {
+      "q": "Eğitimler kimler için uygun?",
+      "a": "Hiç deneyimi olmayan yeni başlayanlardan, stratejisini sistematik hale getirmek isteyen deneyimli yatırımcılara kadar geniş bir kitleye uygun programlar mevcut."
+    },
+    {
+      "q": "Sinyal hizmeti veriyor musunuz?",
+      "a": "Odağım sinyal satmak değil, yatırımcının kendi kararlarını verebilmesini sağlamak. Analizlerimi gerekçeleriyle paylaşırım."
+    },
+    {
+      "q": "Nasıl iletişime geçebilirim?",
+      "a": "İletişim sayfasındaki form üzerinden ya da sosyal medya hesaplarımdan bana ulaşabilirsiniz."
+    }
+  ],
+  "socials": [
+    { "platform": "instagram", "url": "https://instagram.com/sinemyazici", "handle": "@sinemyazici" },
+    { "platform": "twitter", "url": "https://x.com/sinemyazici", "handle": "@sinemyazici" },
+    { "platform": "youtube", "url": "https://youtube.com/@sinemyazici", "handle": "@sinemyazici" },
+    { "platform": "telegram", "url": "https://t.me/sinemyazici", "handle": "@sinemyazici" },
+    { "platform": "linkedin", "url": "https://linkedin.com/in/sinemyazici", "handle": "Sinem Yazıcı" },
+    { "platform": "tiktok", "url": "https://tiktok.com/@sinemyazici", "handle": "@sinemyazici" }
+  ],
+  "contact": {
+    "email": "iletisim@sinemyazici.com.tr",
+    "phone": "+90 555 000 00 00",
+    "address": "Levent, İstanbul, Türkiye",
+    "mapEmbedUrl": "https://www.google.com/maps?q=Levent%2C%20Istanbul&output=embed",
+    "formEndpoint": ""
+  },
+  "newsletter": {
+    "heading": "Telegram kanalıma katıl",
+    "description": "Günlük piyasa notlarımı, işlem fikirlerimi ve analizlerimi anında Telegram kanalımdan takip et.",
+    "telegramUrl": "https://t.me/sinemyazici",
+    "buttonLabel": "Telegram Kanalına Abone Ol"
+  },
+  "feed": {
+    "twitterHandle": "piyasa__demett",
+    "heading": "Güncel paylaşımlar",
+    "description": "Piyasa notlarımı, işlem fikirlerimi ve günlük değerlendirmelerimi X (Twitter) üzerinden paylaşıyorum."
+  },
+  "navigation": [
+    { "label": "Anasayfa", "href": "/" },
+    { "label": "Aracı Kurumlar", "href": "/#araci-kurumlar" },
+    { "label": "Ben Kimim", "href": "/sinem-yazici-kimdir" },
+    { "label": "Paylaşımlar", "href": "/#paylasimlar" },
+    { "label": "İletişim", "href": "/iletisim" }
+  ],
+  "legal": {
+    "disclaimer": "Bu web sitesindeki içerikler yalnızca eğitim ve bilgilendirme amaçlıdır, yatırım danışmanlığı veya yatırım tavsiyesi niteliği taşımaz. Yatırım kararlarınızın sorumluluğu size aittir.",
+    "copyright": "Sinem Yazıcı"
+  },
+  "sections": {
+    "stats": false,
+    "brokers": true,
+    "expertise": false,
+    "about": true,
+    "services": false,
+    "markets": false,
+    "media": true,
+    "gallery": true,
+    "feed": true,
+    "testimonials": true,
+    "faq": true,
+    "newsletter": true,
+    "contact": true
+  }
+}
+
+
+
