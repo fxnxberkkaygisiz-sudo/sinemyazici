@@ -249,12 +249,8 @@
     }
   ],
   "socials": [
-    { "platform": "instagram", "url": "https://instagram.com/sinemyazici", "handle": "@sinemyazici" },
-    { "platform": "twitter", "url": "https://x.com/sinemyazici", "handle": "@sinemyazici" },
-    { "platform": "youtube", "url": "https://youtube.com/@sinemyazici", "handle": "@sinemyazici" },
-    { "platform": "telegram", "url": "https://t.me/sinemyazici", "handle": "@sinemyazici" },
-    { "platform": "linkedin", "url": "https://linkedin.com/in/sinemyazici", "handle": "Sinem Yazıcı" },
-    { "platform": "tiktok", "url": "https://tiktok.com/@sinemyazici", "handle": "@sinemyazici" }
+    { "platform": "twitter", "url": "https://x.com/borsadadonen", "handle": "@sinemyazici" },
+    { "platform": "telegram", "url": "https://t.me/sinemyazici", "handle": "@sinemyazici" }
   ],
   "contact": {
     "email": "yazicisinem140@gmail.com",
@@ -269,7 +265,7 @@
     "buttonLabel": "Telegram Kanalına Abone Ol"
   },
   "feed": {
-    "twitterHandle": "piyasa__demett",
+    "twitterHandle": "borsadadonen",
     "heading": "Güncel paylaşımlar",
     "description": "Piyasa notlarımı, işlem fikirlerimi ve günlük değerlendirmelerimi X (Twitter) üzerinden paylaşıyorum."
   },
