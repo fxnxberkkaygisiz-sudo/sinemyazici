@@ -58,26 +58,13 @@
     "heading": "Çalıştığım aracı kurumlar",
     "description": "Aşağıdaki aracı kurumlara referansımla kayıt olarak avantajlı koşullardan yararlanabilir, birlikte çalıştığımız güvenilir platformlardan işlem yapabilirsiniz.",
     "items": [
-      {
-        "name": "Midas",
-        "logo": "/images/broker-midas.webp",
-        "description": "Türkiye ve ABD hisse senetlerine düşük komisyonla, sade bir arayüzle erişim sağlayan dijital yatırım platformu.",
-        "registerLabel": "Kayıt Ol",
-        "registerHref": "https://www.getmidas.com/"
-      },
+
       {
         "name": "Pusula Yatırım",
         "logo": "/images/broker-pusula.png",
         "description": "Aracılık, portföy yönetimi ve piyasa analizleri sunan; canlı yayınlarda birlikte çalıştığım aracı kurum.",
         "registerLabel": "Kayıt Ol",
-        "registerHref": "https://www.pusulayatirim.com.tr/"
-      },
-      {
-        "name": "A1 Capital",
-        "logo": "/images/broker-a1capital.png",
-        "description": "Hisse senedi ve VİOP dâhil geniş ürün yelpazesiyle köklü ve güvenilir bir aracı kurum.",
-        "registerLabel": "Kayıt Ol",
-        "registerHref": "https://www.a1capital.com.tr/"
+        "registerHref": "https://isube.pusulayatırım.com.tr/iletisim/online-hesap-olustur"
       }
     ]
   },
@@ -270,8 +257,7 @@
     { "platform": "tiktok", "url": "https://tiktok.com/@sinemyazici", "handle": "@sinemyazici" }
   ],
   "contact": {
-    "email": "iletisim@sinemyazici.com.tr",
-    "phone": "+90 555 000 00 00",
+    "email": "yazicisinem140@gmail.com",
     "address": "Levent, İstanbul, Türkiye",
     "mapEmbedUrl": "https://www.google.com/maps?q=Levent%2C%20Istanbul&output=embed",
     "formEndpoint": ""
