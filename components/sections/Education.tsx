@@ -1,24 +1,44 @@
 import { CalendarDays } from "lucide-react";
-import { Section, SectionHeading } from "@/components/ui/Section";
+import { Section, SectionHeading, SectionMore } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { cn } from "@/lib/cn";
 import { getPerson } from "@/lib/person";
 
-export function Education() {
+export function Education({
+  /** Gösterilecek program sayısı (ana sayfada özet için). */
+  limit,
+  /** Verilirse bölümün altına "tümünü gör" bağlantısı eklenir. */
+  moreHref,
+  hideHeading,
+}: {
+  limit?: number;
+  moreHref?: string;
+  hideHeading?: boolean;
+} = {}) {
   const { education } = getPerson();
   if (!education.items.length) return null;
 
+  const items = limit ? education.items.slice(0, limit) : education.items;
+  const hasMore = Boolean(moreHref) && items.length < education.items.length;
+
   return (
     <Section id="egitim" className="border-t border-hairline">
-      <SectionHeading
-        align="left"
-        eyebrow="Eğitim Kadrosu"
-        title={education.heading || "Eğitim & mentorluk"}
-        description={education.description}
-      />
+      {hideHeading ? null : (
+        <SectionHeading
+          align="left"
+          eyebrow="Eğitim Kadrosu"
+          title={education.heading || "Eğitim & mentorluk"}
+          description={education.description}
+        />
+      )}
 
-      <div className="mt-14 space-y-16 lg:space-y-24">
-        {education.items.map((item, i) => {
+      <div
+        className={cn(
+          "space-y-16 lg:space-y-24",
+          hideHeading ? "mt-0" : "mt-14"
+        )}
+      >
+        {items.map((item, i) => {
           const reversed = i % 2 === 1;
           return (
             <Reveal key={item.title}>
@@ -58,6 +78,10 @@ export function Education() {
           );
         })}
       </div>
+
+      {hasMore ? (
+        <SectionMore href={moreHref!}>Tüm eğitim programlarını gör</SectionMore>
+      ) : null}
     </Section>
   );
 }

@@ -36,10 +36,45 @@ const personSchema = z.object({
     description: z.string(),
     keywords: z.array(z.string()).default([]),
     ogImage: z.string().optional().default(""),
+    alternateNames: z.array(z.string()).default([]),
     url: z.string(),
     locale: z.string().optional().default("tr_TR"),
     twitterHandle: z.string().optional().default(""),
   }),
+  /** Alt sayfaların başlık/açıklama metinleri (SEO + H1). */
+  pages: z
+    .record(
+      z.string(),
+      z.object({
+        eyebrow: z.string().optional().default(""),
+        h1: z.string(),
+        title: z.string(),
+        description: z.string(),
+        intro: z.string().optional().default(""),
+      })
+    )
+    .default({}),
+  /** sitemap.xml'de yayınlanacak sayfalar. */
+  sitemap: z
+    .array(
+      z.object({
+        path: z.string(),
+        changeFrequency: z
+          .enum([
+            "always",
+            "hourly",
+            "daily",
+            "weekly",
+            "monthly",
+            "yearly",
+            "never",
+          ])
+          .optional()
+          .default("monthly"),
+        priority: z.number().min(0).max(1).optional().default(0.5),
+      })
+    )
+    .default([]),
   theme: z
     .object({
       accent: z.string().optional(),
@@ -173,15 +208,14 @@ const personSchema = z.object({
     })
     .optional()
     .default({}),
-  auth: z
+  /** Menü sağındaki tek eylem butonu. Tanımlı değilse buton gösterilmez. */
+  headerCta: z
     .object({
-      loginLabel: z.string().optional().default("Giriş Yap"),
-      loginHref: z.string().optional().default("/giris"),
-      registerLabel: z.string().optional().default("Kayıt Ol"),
-      registerHref: z.string().optional().default("/kayit"),
+      label: z.string(),
+      href: z.string(),
+      external: z.boolean().optional().default(false),
     })
-    .optional()
-    .default({}),
+    .optional(),
   brokers: z
     .object({
       heading: z.string().optional().default(""),
@@ -278,6 +312,7 @@ const personSchema = z.object({
 });
 
 export type Person = z.infer<typeof personSchema>;
+export type PageMeta = Person["pages"][string];
 export type SocialLink = Person["socials"][number];
 export type NavLink = Person["navigation"][number];
 export type Service = Person["services"][number];
@@ -308,4 +343,23 @@ export function getPerson(): Person {
 export function isSectionEnabled(key: string): boolean {
   const { sections } = getPerson();
   return sections[key] !== false;
+}
+
+/** Sondaki "/" olmadan kanonik site adresi. */
+export function siteUrl(): string {
+  return getPerson().seo.url.replace(/\/$/, "");
+}
+
+/**
+ * Alt sayfa metinlerini döndürür (person.json > pages).
+ * Eksik anahtar build'i anlamlı bir hatayla durdurur.
+ */
+export function getPage(slug: string): PageMeta {
+  const page = getPerson().pages[slug];
+  if (!page) {
+    throw new Error(
+      `person.json > pages içinde "${slug}" tanımlı değil. Lütfen bu sayfanın başlık ve açıklamasını ekleyin.`
+    );
+  }
+  return page;
 }

@@ -1,19 +1,28 @@
 import { ArrowUpRight } from "lucide-react";
-import { Section, SectionHeading } from "@/components/ui/Section";
+import { Section, SectionHeading, SectionMore } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { getPerson } from "@/lib/person";
 
-export function Brokers() {
+export function Brokers({
+  /** Verilirse bölümün altına ayrıntı sayfası bağlantısı eklenir. */
+  moreHref,
+  hideHeading,
+}: {
+  moreHref?: string;
+  hideHeading?: boolean;
+} = {}) {
   const { brokers } = getPerson();
   if (!brokers.items.length) return null;
 
   return (
     <Section id="araci-kurumlar" className="bg-panel">
-      <SectionHeading
-        eyebrow="Aracı Kurumlar"
-        title={brokers.heading || "Çalıştığım aracı kurumlar"}
-        description={brokers.description}
-      />
+      {hideHeading ? null : (
+        <SectionHeading
+          eyebrow="Aracı Kurumlar"
+          title={brokers.heading || "Çalıştığım aracı kurumlar"}
+          description={brokers.description}
+        />
+      )}
 
       <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {brokers.items.map((b, i) => (
@@ -60,6 +69,12 @@ export function Brokers() {
       <p className="mt-8 text-center text-xs text-faint">
         Kayıt bağlantıları ilgili aracı kurumların resmî sitelerine yönlendirir.
       </p>
+
+      {moreHref ? (
+        <SectionMore href={moreHref} className="mt-8">
+          Aracı kurumlar hakkında ayrıntılı bilgi
+        </SectionMore>
+      ) : null}
     </Section>
   );
 }

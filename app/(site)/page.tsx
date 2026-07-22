@@ -13,6 +13,7 @@ import { Faq } from "@/components/sections/Faq";
 import { Newsletter } from "@/components/sections/Newsletter";
 import { Contact } from "@/components/sections/Contact";
 import { PersonJsonLd } from "@/components/seo/PersonJsonLd";
+import { SiteNavigationJsonLd } from "@/components/seo/SiteNavigationJsonLd";
 import { getPerson, isSectionEnabled } from "@/lib/person";
 
 export default function HomePage() {
@@ -21,18 +22,21 @@ export default function HomePage() {
   return (
     <>
       <PersonJsonLd />
+      <SiteNavigationJsonLd />
       <Hero />
-      {isSectionEnabled("brokers") && <Brokers />}
+      {isSectionEnabled("brokers") && <Brokers moreHref="/araci-kurumlar" />}
       {isSectionEnabled("stats") && <Stats />}
       {isSectionEnabled("expertise") && <Expertise />}
       {isSectionEnabled("about") && <About />}
       {isSectionEnabled("services") && <Services />}
-      {isSectionEnabled("media") && <Media />}
+      {isSectionEnabled("media") && <Media limit={3} moreHref="/medya" />}
       {isSectionEnabled("gallery") && <Gallery />}
       {isSectionEnabled("markets") && <Markets />}
       {isSectionEnabled("feed") && <Feed />}
       {isSectionEnabled("testimonials") && <Testimonials />}
-      {isSectionEnabled("faq") && <Faq items={faq} />}
+      {isSectionEnabled("faq") && (
+        <Faq items={faq} limit={3} moreHref="/sss" />
+      )}
       {isSectionEnabled("newsletter") && (
         <Newsletter
           heading={newsletter.heading}

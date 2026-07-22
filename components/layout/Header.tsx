@@ -13,12 +13,12 @@ export function Header({
   siteName,
   brandText,
   nav,
-  auth,
+  cta,
 }: {
   siteName: string;
   brandText: string;
   nav: NavLink[];
-  auth: Person["auth"];
+  cta?: Person["headerCta"];
 }) {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
@@ -79,17 +79,15 @@ export function Header({
           ))}
         </nav>
 
-        <div className="hidden items-center gap-1.5 lg:flex">
-          <Link
-            href={auth.loginHref}
-            className="rounded-lg px-4 py-2 text-sm font-medium text-ink transition-colors hover:text-brand"
-          >
-            {auth.loginLabel}
-          </Link>
-          <Button href={auth.registerHref} size="md">
-            {auth.registerLabel}
-          </Button>
-        </div>
+        {cta ? (
+          <div className="hidden items-center lg:flex">
+            <Button href={cta.href} size="md" external={cta.external}>
+              {cta.label}
+            </Button>
+          </div>
+        ) : (
+          <span className="hidden lg:block" />
+        )}
 
         <button
           type="button"
@@ -124,17 +122,18 @@ export function Header({
               {item.label}
             </Link>
           ))}
-          <div className="mt-3 grid grid-cols-2 gap-2">
-            <Link
-              href={auth.loginHref}
-              className="rounded-lg border border-border px-4 py-2.5 text-center text-sm font-medium text-ink transition-colors hover:border-brand hover:text-brand"
-            >
-              {auth.loginLabel}
-            </Link>
-            <Button href={auth.registerHref} size="md" className="w-full">
-              {auth.registerLabel}
-            </Button>
-          </div>
+          {cta ? (
+            <div className="mt-3">
+              <Button
+                href={cta.href}
+                size="md"
+                external={cta.external}
+                className="w-full"
+              >
+                {cta.label}
+              </Button>
+            </div>
+          ) : null}
         </Container>
       </div>
     </header>

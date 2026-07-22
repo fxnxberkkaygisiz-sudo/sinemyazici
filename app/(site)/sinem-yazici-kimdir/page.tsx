@@ -5,6 +5,7 @@ import { Section } from "@/components/ui/Section";
 import { About } from "@/components/sections/About";
 import { Education } from "@/components/sections/Education";
 import { Button } from "@/components/ui/Button";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { getPerson } from "@/lib/person";
 
 export function generateMetadata(): Metadata {
@@ -21,6 +22,13 @@ export default function AboutPage() {
 
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Anasayfa", path: "/" },
+          { name: `${profile.fullName} Kimdir?`, path: "/sinem-yazici-kimdir" },
+        ]}
+      />
+
       <section className="border-b border-hairline">
         <Container className="py-20 sm:py-24">
           <span className="eyebrow">Ben Kimim</span>
@@ -39,8 +47,8 @@ export default function AboutPage() {
 
       <About full />
 
-      {/* Eğitim & mentorluk (fotoğraflı) */}
-      <Education />
+      {/* Eğitim & mentorluk — ayrıntısı /egitim sayfasında */}
+      <Education limit={1} moreHref="/egitim" />
 
       {/* Sertifikalar & Başarılar */}
       {certifications.length || achievements.length ? (

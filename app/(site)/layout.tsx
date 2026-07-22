@@ -21,7 +21,7 @@ export default function SiteLayout({
         siteName={person.seo.siteName}
         brandText={person.seo.url.replace(/^https?:\/\//, "").replace(/\/$/, "")}
         nav={person.navigation}
-        auth={person.auth}
+        cta={person.headerCta}
       />
       <main id="main">{children}</main>
       <Footer />

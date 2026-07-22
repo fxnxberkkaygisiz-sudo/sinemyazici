@@ -1,14 +1,19 @@
 import type { MetadataRoute } from "next";
-import { getPerson } from "@/lib/person";
+import { siteUrl } from "@/lib/person";
 
+/**
+ * https://sinemyazici.com.tr/robots.txt
+ * Not: /giris ve /kayit sayfaları kaldırıldı. Silinen sayfalar robots.txt ile
+ * engellenmez — engellenirse Google 404'ü göremez ve URL'ler dizinde asılı
+ * kalır. Doğru sinyal, sayfanın taranıp 404 döndürmesidir.
+ */
 export default function robots(): MetadataRoute.Robots {
-  const { seo } = getPerson();
-  const base = seo.url.replace(/\/$/, "");
+  const base = siteUrl();
+
   return {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/giris", "/kayit"],
     },
     sitemap: `${base}/sitemap.xml`,
     host: base,

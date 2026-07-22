@@ -2,24 +2,46 @@
 
 import { useState } from "react";
 import { Plus } from "lucide-react";
-import { Section, SectionHeading } from "@/components/ui/Section";
+import { Section, SectionHeading, SectionMore } from "@/components/ui/Section";
 import { cn } from "@/lib/cn";
 
 type FaqItem = { q: string; a: string };
 
-export function Faq({ items }: { items: FaqItem[] }) {
+export function Faq({
+  items,
+  limit,
+  moreHref,
+  hideHeading,
+}: {
+  items: FaqItem[];
+  /** Gösterilecek soru sayısı (ana sayfada özet için). */
+  limit?: number;
+  /** Verilirse bölümün altına "tümünü gör" bağlantısı eklenir. */
+  moreHref?: string;
+  hideHeading?: boolean;
+}) {
   const [open, setOpen] = useState<number | null>(0);
   if (!items.length) return null;
 
+  const shown = limit ? items.slice(0, limit) : items;
+  const hasMore = Boolean(moreHref) && shown.length < items.length;
+
   return (
     <Section id="sss">
-      <SectionHeading
-        eyebrow="S.S.S."
-        title="Sıkça sorulan sorular"
-        description="Aklınıza takılanların bir kısmının yanıtı burada."
-      />
-      <div className="mx-auto mt-12 max-w-3xl space-y-3">
-        {items.map((item, i) => {
+      {hideHeading ? null : (
+        <SectionHeading
+          eyebrow="S.S.S."
+          title="Sıkça sorulan sorular"
+          description="Aklınıza takılanların bir kısmının yanıtı burada."
+        />
+      )}
+      <div
+        className={cn(
+          "mx-auto max-w-3xl space-y-3",
+          hideHeading ? "mt-0" : "mt-12"
+        )}
+      >
+        {shown.map((item, i) => {
           const isOpen = open === i;
           return (
             <div
@@ -63,6 +85,10 @@ export function Faq({ items }: { items: FaqItem[] }) {
           );
         })}
       </div>
+
+      {hasMore ? (
+        <SectionMore href={moreHref!}>Tüm soruları gör</SectionMore>
+      ) : null}
     </Section>
   );
 }

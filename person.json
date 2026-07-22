@@ -34,6 +34,7 @@
       "borsa eğitimi"
     ],
     "ogImage": "/images/og.jpg",
+    "alternateNames": ["Sinem Yazıcı Borsa", "sinemyazici.com.tr", "Borsada Dönen"],
     "url": "https://sinemyazici.com.tr",
     "locale": "tr_TR",
     "twitterHandle": "@sinemyazici"
@@ -45,14 +46,13 @@
   },
   "hero": {
     "eyebrow": "",
-    "primaryCta": { "label": "Kayıt Ol", "href": "/kayit" },
-    "secondaryCta": { "label": "Giriş Yap", "href": "/giris" }
+    "primaryCta": { "label": "Aracı Kurumlar", "href": "/araci-kurumlar" },
+    "secondaryCta": { "label": "Eğitim Programları", "href": "/egitim" }
   },
-  "auth": {
-    "loginLabel": "Giriş Yap",
-    "loginHref": "/giris",
-    "registerLabel": "Kayıt Ol",
-    "registerHref": "/kayit"
+  "headerCta": {
+    "label": "Telegram Kanalı",
+    "href": "https://t.me/sinemyazici",
+    "external": true
   },
   "brokers": {
     "heading": "Çalıştığım aracı kurumlar",
@@ -271,10 +271,51 @@
   },
   "navigation": [
     { "label": "Anasayfa", "href": "/" },
-    { "label": "Aracı Kurumlar", "href": "/#araci-kurumlar" },
+    { "label": "Aracı Kurumlar", "href": "/araci-kurumlar" },
+    { "label": "Eğitim", "href": "/egitim" },
+    { "label": "Medya", "href": "/medya" },
     { "label": "Ben Kimim", "href": "/sinem-yazici-kimdir" },
-    { "label": "Paylaşımlar", "href": "/#paylasimlar" },
+    { "label": "S.S.S.", "href": "/sss" },
     { "label": "İletişim", "href": "/iletisim" }
+  ],
+  "pages": {
+    "araci-kurumlar": {
+      "eyebrow": "Aracı Kurumlar",
+      "h1": "Referanslı Aracı Kurumlar",
+      "title": "Referanslı Aracı Kurumlar",
+      "description": "Birlikte çalıştığım, SPK düzenlemelerine tabi aracı kurumlar ve referansımla hesap açılışı. Kayıt koşulları ve kurum bilgileri.",
+      "intro": "Aşağıdaki aracı kurumlara referansımla kayıt olarak avantajlı koşullardan yararlanabilirsiniz. Hesap açılışı tamamen ilgili kurumun kendi süreçleri ve SPK mevzuatı kapsamında gerçekleşir."
+    },
+    "egitim": {
+      "eyebrow": "Eğitim & Mentorluk",
+      "h1": "Borsa Eğitimleri ve Mentorluk Programı",
+      "title": "Borsa Eğitimi & Mentorluk",
+      "description": "Sınırlı kontenjanlı grup eğitimleri, price action atölyeleri ve birebir mentorluk programı. Tamamen uygulamalı, canlı grafikler üzerinden borsa eğitimi.",
+      "intro": "Küçük ve sınırlı kontenjanlı gruplarla, tamamen uygulamalı eğitimler düzenliyorum. Amacım katılımcılara ezber değil; kendi kararlarını verebilecekleri kalıcı ve sistematik bir bakış açısı kazandırmak."
+    },
+    "medya": {
+      "eyebrow": "Basın & Etkinlik",
+      "h1": "Medyada Sinem Yazıcı",
+      "title": "Medya & Basın",
+      "description": "Konferanslar, ödül törenleri, halka arz gong törenleri ve uluslararası borsa buluşmalarından kareler.",
+      "intro": "Uluslararası buluşmalar, konferanslar, ödül törenleri ve eğitim programlarından kareler."
+    },
+    "sss": {
+      "eyebrow": "S.S.S.",
+      "h1": "Sıkça Sorulan Sorular",
+      "title": "Sıkça Sorulan Sorular",
+      "description": "Eğitim programları, mentorluk süreci, aracı kurum kayıtları ve yatırım tavsiyesi kapsamına dair en sık gelen soruların yanıtları.",
+      "intro": "Eğitimler, mentorluk süreci ve paylaşımların kapsamına dair en sık gelen soruların yanıtları."
+    }
+  },
+  "sitemap": [
+    { "path": "/", "changeFrequency": "weekly", "priority": 1 },
+    { "path": "/araci-kurumlar", "changeFrequency": "monthly", "priority": 0.9 },
+    { "path": "/egitim", "changeFrequency": "monthly", "priority": 0.9 },
+    { "path": "/sinem-yazici-kimdir", "changeFrequency": "monthly", "priority": 0.8 },
+    { "path": "/medya", "changeFrequency": "monthly", "priority": 0.6 },
+    { "path": "/sss", "changeFrequency": "monthly", "priority": 0.6 },
+    { "path": "/iletisim", "changeFrequency": "yearly", "priority": 0.5 }
   ],
   "legal": {
     "disclaimer": "Bu web sitesindeki içerikler yalnızca eğitim ve bilgilendirme amaçlıdır, yatırım danışmanlığı veya yatırım tavsiyesi niteliği taşımaz. Yatırım kararlarınızın sorumluluğu size aittir.",

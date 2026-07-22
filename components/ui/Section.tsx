@@ -1,5 +1,34 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/cn";
 import { Container } from "./Container";
+
+/**
+ * Bölüm altındaki "tümünü gör" bağlantısı.
+ * Ana sayfadaki özet bölümleri ilgili alt sayfaya bağlar — hem kullanıcı akışı
+ * hem de Google'ın iç link hiyerarşisini anlaması için.
+ */
+export function SectionMore({
+  href,
+  children,
+  className,
+}: {
+  href: string;
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <div className={cn("mt-12 text-center", className)}>
+      <Link
+        href={href}
+        className="group inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-medium text-fg transition-colors hover:border-ink hover:text-ink"
+      >
+        {children}
+        <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+      </Link>
+    </div>
+  );
+}
 
 export function SectionHeading({
   eyebrow,

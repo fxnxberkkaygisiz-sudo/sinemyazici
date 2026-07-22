@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { Contact } from "@/components/sections/Contact";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { getPerson } from "@/lib/person";
 
 export function generateMetadata(): Metadata {
@@ -17,6 +18,13 @@ export default function ContactPage() {
 
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Anasayfa", path: "/" },
+          { name: "İletişim", path: "/iletisim" },
+        ]}
+      />
+
       <section className="border-b border-hairline">
         <Container className="py-16 sm:py-20">
           <span className="eyebrow">İletişim</span>

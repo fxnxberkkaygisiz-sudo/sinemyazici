@@ -1,23 +1,42 @@
 import { ArrowUpRight } from "lucide-react";
-import { Section, SectionHeading } from "@/components/ui/Section";
+import { Section, SectionHeading, SectionMore } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { getPerson } from "@/lib/person";
 
-export function Media() {
+export function Media({
+  limit,
+  moreHref,
+  hideHeading,
+}: {
+  /** Gösterilecek görsel sayısı (ana sayfada özet için). */
+  limit?: number;
+  /** Verilirse bölümün altına "tümünü gör" bağlantısı eklenir. */
+  moreHref?: string;
+  hideHeading?: boolean;
+} = {}) {
   const { media } = getPerson();
   if (!media.images.length) return null;
 
+  const images = limit ? media.images.slice(0, limit) : media.images;
+  const hasMore = Boolean(moreHref) && images.length < media.images.length;
+
   return (
     <Section id="medya" className="border-t border-hairline">
-      <SectionHeading
-        eyebrow="Basın & Etkinlik"
-        title={media.heading || "Medyada Sinem Yazıcı"}
-        description={media.description}
-      />
+      {hideHeading ? null : (
+        <SectionHeading
+          eyebrow="Basın & Etkinlik"
+          title={media.heading || "Medyada Sinem Yazıcı"}
+          description={media.description}
+        />
+      )}
 
       {/* Basın-kupürü masonry — görseller kırpılmaz, künye altta açık kartta */}
-      <div className="mt-14 gap-6 [column-fill:balance] sm:columns-2 lg:columns-3 [&>*]:mb-6">
-        {media.images.map((img, i) => {
+      <div
+        className={`gap-6 [column-fill:balance] sm:columns-2 lg:columns-3 [&>*]:mb-6 ${
+          hideHeading ? "mt-0" : "mt-14"
+        }`}
+      >
+        {images.map((img, i) => {
           const inner = (
             <>
               <div className="relative overflow-hidden">
@@ -66,6 +85,10 @@ export function Media() {
           );
         })}
       </div>
+
+      {hasMore ? (
+        <SectionMore href={moreHref!}>Tüm medya karelerini gör</SectionMore>
+      ) : null}
     </Section>
   );
 }
