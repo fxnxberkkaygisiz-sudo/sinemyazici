@@ -19,7 +19,7 @@
     "siteName": "Sinem Yazıcı",
     "titleDefault": "Sinem Yazıcı — Profesyonel Borsacı & Yatırım Stratejisti",
     "titleTemplate": "%s | Sinem Yazıcı",
-    "description": "Borsa İstanbul'da 12+ yıllık tecrübeye sahip profesyonel borsacı Sinem Yazıcı. BIST hisse ve endeks analizleri, yatırım stratejileri, eğitim ve danışmanlık.",
+    "description": "Sinem Yazıcı, Borsa İstanbul'da 12+ yıllık tecrübeye sahip profesyonel borsacı ve yatırım eğitmenidir. BIST hisse ve endeks analizleri, yatırım stratejileri, eğitim ve mentorluk.",
     "keywords": [
       "Sinem Yazıcı",
       "borsacı",
@@ -65,6 +65,13 @@
         "description": "Aracılık, portföy yönetimi ve piyasa analizleri sunan; canlı yayınlarda birlikte çalıştığım aracı kurum.",
         "registerLabel": "Kayıt Ol",
         "registerHref": "https://isube.pusulayatırım.com.tr/iletisim/online-hesap-olustur"
+      },
+      {
+        "name": "Peker Menkul",
+        "logo": "/images/broker-peker.png",
+        "description": "Borsa İstanbul pay piyasası ve VİOP işlemleri, portföy yönetimi ve araştırma raporları sunan, SPK tarafından yetkilendirilmiş aracı kurum.",
+        "registerLabel": "Kayıt Ol",
+        "registerHref": "https://hesapac.pekermenkul.com.tr"
       }
     ]
   },
@@ -282,29 +289,29 @@
     "araci-kurumlar": {
       "eyebrow": "Aracı Kurumlar",
       "h1": "Referanslı Aracı Kurumlar",
-      "title": "Referanslı Aracı Kurumlar",
-      "description": "Birlikte çalıştığım, SPK düzenlemelerine tabi aracı kurumlar ve referansımla hesap açılışı. Kayıt koşulları ve kurum bilgileri.",
+      "title": "Çalıştığım Aracı Kurumlar",
+      "description": "Sinem Yazıcı'nın birlikte çalıştığı, SPK tarafından yetkilendirilmiş aracı kurumlar. Referansla hesap açılışı, kayıt koşulları ve kurum bilgileri.",
       "intro": "Aşağıdaki aracı kurumlara referansımla kayıt olarak avantajlı koşullardan yararlanabilirsiniz. Hesap açılışı tamamen ilgili kurumun kendi süreçleri ve SPK mevzuatı kapsamında gerçekleşir."
     },
     "egitim": {
       "eyebrow": "Eğitim & Mentorluk",
       "h1": "Borsa Eğitimleri ve Mentorluk Programı",
-      "title": "Borsa Eğitimi & Mentorluk",
-      "description": "Sınırlı kontenjanlı grup eğitimleri, price action atölyeleri ve birebir mentorluk programı. Tamamen uygulamalı, canlı grafikler üzerinden borsa eğitimi.",
+      "title": "Eğitim & Mentorluk",
+      "description": "Sinem Yazıcı'nın borsa eğitim programları: sınırlı kontenjanlı grup eğitimleri, price action atölyeleri ve birebir mentorluk. Tamamen uygulamalı, canlı grafikler üzerinden.",
       "intro": "Küçük ve sınırlı kontenjanlı gruplarla, tamamen uygulamalı eğitimler düzenliyorum. Amacım katılımcılara ezber değil; kendi kararlarını verebilecekleri kalıcı ve sistematik bir bakış açısı kazandırmak."
     },
     "medya": {
       "eyebrow": "Basın & Etkinlik",
       "h1": "Medyada Sinem Yazıcı",
       "title": "Medya & Basın",
-      "description": "Konferanslar, ödül törenleri, halka arz gong törenleri ve uluslararası borsa buluşmalarından kareler.",
+      "description": "Sinem Yazıcı'nın katıldığı konferanslar, ödül törenleri, halka arz gong törenleri ve uluslararası borsa buluşmalarından kareler.",
       "intro": "Uluslararası buluşmalar, konferanslar, ödül törenleri ve eğitim programlarından kareler."
     },
     "sss": {
       "eyebrow": "S.S.S.",
       "h1": "Sıkça Sorulan Sorular",
       "title": "Sıkça Sorulan Sorular",
-      "description": "Eğitim programları, mentorluk süreci, aracı kurum kayıtları ve yatırım tavsiyesi kapsamına dair en sık gelen soruların yanıtları.",
+      "description": "Sinem Yazıcı'ya en sık sorulan sorular: eğitim programları, mentorluk süreci, aracı kurum kayıtları ve yatırım tavsiyesi kapsamı.",
       "intro": "Eğitimler, mentorluk süreci ve paylaşımların kapsamına dair en sık gelen soruların yanıtları."
     }
   },
