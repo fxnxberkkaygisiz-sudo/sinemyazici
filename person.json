@@ -60,18 +60,10 @@
     "items": [
 
       {
-        "name": "Pusula Yatırım",
-        "logo": "/images/broker-pusula.png",
-        "description": "Aracılık, portföy yönetimi ve piyasa analizleri sunan; canlı yayınlarda birlikte çalıştığım aracı kurum.",
+        "name": "Ereğli Menkul",
+        "description": "Borsa İstanbul işlemleri için çalıştığım, SPK tarafından yetkilendirilmiş aracı kurum.",
         "registerLabel": "Kayıt Ol",
-        "registerHref": "https://isube.pusulayatırım.com.tr/iletisim/online-hesap-olustur"
-      },
-      {
-        "name": "Peker Menkul",
-        "logo": "/images/broker-peker.png",
-        "description": "Borsa İstanbul pay piyasası ve VİOP işlemleri, portföy yönetimi ve araştırma raporları sunan, SPK tarafından yetkilendirilmiş aracı kurum.",
-        "registerLabel": "Kayıt Ol",
-        "registerHref": "https://hesapac.pekermenkul.com.tr"
+        "registerHref": "https://ereglimenkul.org"
       }
     ]
   },
