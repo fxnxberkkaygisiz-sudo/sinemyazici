@@ -61,6 +61,17 @@ export function Brokers({
                 {b.registerLabel || "Kayıt Ol"}
                 <ArrowUpRight className="h-4 w-4" />
               </a>
+              {b.secondaryHref ? (
+                <a
+                  href={b.secondaryHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-lg border border-ink px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-white"
+                >
+                  {b.secondaryLabel}
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
+              ) : null}
             </div>
           </Reveal>
         ))}
