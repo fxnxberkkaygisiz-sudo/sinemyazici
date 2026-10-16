@@ -60,13 +60,13 @@
     "items": [
 
       {
-        "name": "Ulu Menkul",
-        "logo": "/images/ulu-menkul.png",
+        "name": "Ereğli Menkul",
+        "logo": "/images/eregli-menkul.png",
         "description": "Borsa İstanbul işlemleri için çalıştığım, SPK tarafından yetkilendirilmiş aracı kurum. Mevcut hesabınız varsa Online Şube üzerinden giriş yapabilirsiniz.",
         "registerLabel": "Hesap Aç",
-        "registerHref": "https://hesapac.ulumenkul.com.tr/",
+        "registerHref": "https://hesapac.ereglimenkul.com/bireysel/basvuru",
         "secondaryLabel": "Online Şube",
-        "secondaryHref": "https://onlinesube.ulumenkul.com.tr/"
+        "secondaryHref": "https://onlinesube.ereglimenkul.com/bireysel/internet-subesi/giris"
       }
     ]
   },
