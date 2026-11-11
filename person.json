@@ -58,7 +58,15 @@
     "heading": "Çalıştığım aracı kurumlar",
     "description": "Aşağıdaki aracı kurumlara referansımla kayıt olarak avantajlı koşullardan yararlanabilir, birlikte çalıştığımız güvenilir platformlardan işlem yapabilirsiniz.",
     "items": [
-
+      {
+        "name": "Ereğli Menkul",
+        "logo": "/images/eregli-menkul.png",
+        "description": "Borsa İstanbul işlemleri için çalıştığım, SPK tarafından yetkilendirilmiş aracı kurum. Mevcut hesabınız varsa Online Şube üzerinden giriş yapabilirsiniz.",
+        "registerLabel": "Hesap Aç",
+        "registerHref": "https://hesapac.ereglimenkul.net/bireysel/basvuru",
+        "secondaryLabel": "Online Şube",
+        "secondaryHref": "https://onlinesube.ereglimenkul.net/bireysel/internet-subesi/giris"
+      },
       {
         "name": "Ulu Menkul",
         "logo": "/images/ulu-menkul.png",
@@ -67,6 +75,15 @@
         "registerHref": "https://hesapac.ulumenkul.com.tr/",
         "secondaryLabel": "Online Şube",
         "secondaryHref": "https://onlinesube.ulumenkul.com.tr/"
+      },
+      {
+        "name": "Osmanlı Menkul",
+        "logo": "/images/osmanli-menkul.png",
+        "description": "Borsa İstanbul işlemleri için çalıştığım, SPK tarafından yetkilendirilmiş aracı kurum. Mevcut hesabınız varsa Online Şube üzerinden giriş yapabilirsiniz.",
+        "registerLabel": "Hesap Aç",
+        "registerHref": "https://dijitalhesap.xn--osmanlmenkul-64b.com.tr/",
+        "secondaryLabel": "Online Şube",
+        "secondaryHref": "https://esube.xn--osmanlmenkul-64b.com.tr/bireysel/internet-subesi/giris"
       }
     ]
   },
