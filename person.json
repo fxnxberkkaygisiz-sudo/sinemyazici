@@ -59,15 +59,6 @@
     "description": "Aşağıdaki aracı kurumlara referansımla kayıt olarak avantajlı koşullardan yararlanabilir, birlikte çalıştığımız güvenilir platformlardan işlem yapabilirsiniz.",
     "items": [
       {
-        "name": "Ereğli Menkul",
-        "logo": "/images/eregli-menkul.png",
-        "description": "Borsa İstanbul işlemleri için çalıştığım, SPK tarafından yetkilendirilmiş aracı kurum. Mevcut hesabınız varsa Online Şube üzerinden giriş yapabilirsiniz.",
-        "registerLabel": "Hesap Aç",
-        "registerHref": "https://hesapac.ereglimenkul.net/bireysel/basvuru",
-        "secondaryLabel": "Online Şube",
-        "secondaryHref": "https://onlinesube.ereglimenkul.net/bireysel/internet-subesi/giris"
-      },
-      {
         "name": "Ulu Menkul",
         "logo": "/images/ulu-menkul.png",
         "description": "Borsa İstanbul işlemleri için çalıştığım, SPK tarafından yetkilendirilmiş aracı kurum. Mevcut hesabınız varsa Online Şube üzerinden giriş yapabilirsiniz.",
