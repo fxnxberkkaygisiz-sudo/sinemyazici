@@ -24,7 +24,7 @@ export function Brokers({
         />
       )}
 
-      <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-14 grid gap-6 sm:grid-cols-2">
         {brokers.items.map((b, i) => (
           <Reveal key={b.name} delay={(i % 3) * 0.07}>
             <div className="card flex h-full flex-col p-7 transition-all duration-300 hover:border-ink hover:shadow-md">
