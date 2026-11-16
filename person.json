@@ -66,6 +66,15 @@
         "registerHref": "https://hesapac.ulumenkul.com.tr/",
         "secondaryLabel": "Online Şube",
         "secondaryHref": "https://onlinesube.ulumenkul.com.tr/"
+      },
+      {
+        "name": "Işıklar Menkul",
+        "logo": "/images/isiklar-menkul.png",
+        "description": "Borsa İstanbul işlemleri için çalıştığım, SPK tarafından yetkilendirilmiş aracı kurum. Mevcut hesabınız varsa Online Şube üzerinden giriş yapabilirsiniz.",
+        "registerLabel": "Hesap Aç",
+        "registerHref": "https://hesapac.isiklarmenkul.com.tr",
+        "secondaryLabel": "Online Şube",
+        "secondaryHref": "https://esube.isiklarmenkul.com.tr/user/login/"
       }
     ]
   },
